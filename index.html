@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- MODERN-NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN-STYLE -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="dashboard">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="dashboard__logo"
+        >
+          <svg class="dashboard__icon logo">
+            <use href="./icons/iconSprite.svg#icon-setting"></use>
+          </svg>
+
+          Dashboard <span class="dashboard__version">v.01</span>
+        </a>
+        <ul class="dashboard__list">
+          <li class="dashboard__item">
+            <button class="dashboard__button">
+              <svg class="dashboard__icon">
+                <use href="./icons/iconSprite.svg#icon-key"></use>
+              </svg>
+              Dashboard
+            </button>
+          </li>
+          <li class="dashboard__item">
+            <button class="dashboard__button">
+              <svg class="dashboard__icon">
+                <use href="./icons/iconSprite.svg#icon-square"></use>
+              </svg>
+              Product
+            </button>
+          </li>
+          <li class="dashboard__item">
+            <button class="dashboard__button dashboard__button--active">
+              <svg class="dashboard__icon">
+                <use href="./icons/iconSprite.svg#icon-user"></use>
+              </svg>
+              Customers
+            </button>
+          </li>
+          <li class="dashboard__item">
+            <button class="dashboard__button">
+              <svg class="dashboard__icon">
+                <use href="./icons/iconSprite.svg#icon-wallet-money"></use>
+              </svg>
+              Income
+            </button>
+          </li>
+          <li class="dashboard__item">
+            <button class="dashboard__button">
+              <svg class="dashboard__icon">
+                <use href="./icons/iconSprite.svg#icon-discount-shape"></use>
+              </svg>
+              Promote
+            </button>
+          </li>
+          <li class="dashboard__item">
+            <button class="dashboard__button">
+              <svg class="dashboard__icon">
+                <use href="./icons/iconSprite.svg#icon-message-question"></use>
+              </svg>
+              Help
+            </button>
+          </li>
+        </ul>
+        <div class="user-profile">
+          <img
+            src="./img/Avatar.png"
+            alt="Evano"
+            class="user-profile__avatar"
+          />
+          <div>
+            <p class="user-profile__name">Evano</p>
+            <p class="user-profile__role">Project Manager</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <p class="main-section__greeting">Hello Evano 👋🏼,</p>
+        <div class="main-section__content">
+          <div class="main-section__search-container">
+            <div class="main-section__categories">
+              <p class="main-section__category--customers">All Customers</p>
+              <p class="main-section__category--members">Active Members</p>
+            </div>
+            <div class="main-section__search-input-container">
+              <input
+                type="text"
+                class="main-section__search-input"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div class="main-section__customers">
+            <table class="main-section__customers-table">
+              <tr class="main-section__table-row">
+                <th class="main-section__table-header">Customer Name</th>
+                <th class="main-section__table-header">Company</th>
+                <th class="main-section__table-header">Phone Number</th>
+                <th class="main-section__table-header">Email</th>
+                <th class="main-section__table-header">Country</th>
+                <th class="main-section__table-header">Status</th>
+              </tr>
+            </table>
+          </div>
+          <div class="main-section__pagination">
+            <p class="main-section__pagination-text">
+              Showing data 1 to 8 of 256K entries
+            </p>
+            <ul class="main-section__pagination-list">
+              <li class="main-section__pagination-item">
+                <button class="main-section__pagination-button">
+                  <svg class="main-section__pagination-icon">
+                    <use href="./icons/iconSprite.svg#icon-arrowLeft"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="main-section__pagination-item">
+                <button
+                  class="main-section__pagination-button main-section__pagination-button--active"
+                >
+                  1
+                </button>
+              </li>
+              <li class="main-section__pagination-item">
+                <button class="main-section__pagination-button">2</button>
+              </li>
+              <li class="main-section__pagination-item">
+                <button class="main-section__pagination-button">3</button>
+              </li>
+              <li class="main-section__pagination-item">
+                <button class="main-section__pagination-button">4</button>
+              </li>
+              <li>...</li>
+              <li class="main-section__pagination-item">
+                <button class="main-section__pagination-button">40</button>
+              </li>
+              <li class="main-section__pagination-item">
+                <button class="main-section__pagination-button">
+                  <svg class="main-section__pagination-icon">
+                    <use href="./icons/iconSprite.svg#icon-arrowRight"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
