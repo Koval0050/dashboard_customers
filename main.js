@@ -88,3 +88,24 @@ const customerTableList = customers.map((e) => {
 });
 
 customerTable.insertAdjacentHTML("beforeend", customerTableList.join(""));
+
+const openModalBtn = document.querySelector(".mobile-open-button");
+const modal = document.querySelector(".backdrop");
+const body = document.body;
+
+openModalBtn.addEventListener("click", () => {
+  modal.classList.remove("modal-is-hidden");
+  body.classList.add("body-modal-open");
+});
+
+const closeBtn = document.querySelector(".modal_close-btn");
+closeBtn.addEventListener("click", () => {
+  modal.classList.add("modal-is-hidden");
+  body.classList.remove("body-modal-open");
+});
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.classList.add("modal-is-hidden");
+    body.classList.remove("body-modal-open");
+  }
+});
