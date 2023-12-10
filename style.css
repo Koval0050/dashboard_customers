@@ -29,8 +29,6 @@ a {
   color: var(--main-text-color);
 }
 
-/* *{border: 1px solid red;} */
-
 body {
   font-size: 14px;
   line-height: 21px;
@@ -337,6 +335,7 @@ body {
 
   .dashboard__logo {
     display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 26px;
     line-height: calc(39 / 26);
