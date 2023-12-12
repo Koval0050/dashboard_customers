@@ -82,7 +82,7 @@ body {
 .modal {
   position: absolute;
   width: 320px;
-  /* min-height: 100vh; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -167,6 +167,7 @@ body {
 .user-profile {
   display: flex;
   column-gap: 2rem;
+  margin-top: auto;
 }
 .user-profile__avatar {
 }
@@ -274,7 +275,6 @@ body {
   border: 1px solid var(--status-text-inactive);
 }
 
-
 .main-section__pagination-text {
   color: var(--table-header-color);
   font-size: 12px;
@@ -351,7 +351,6 @@ body {
   .dashboard__icon {
     width: 24px;
     height: 24px;
-  
   }
   .dashboard__version {
     color: #838383;
@@ -542,12 +541,12 @@ body {
   .main-section__pagination {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
   }
   .main-section__pagination-text {
     color: var(--table-header-color);
-font-size: 14px;
-line-height: calc(16/14);
+    font-size: 14px;
+    line-height: calc(16 / 14);
   }
   .main-section__pagination-list {
     display: flex;
